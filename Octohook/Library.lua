@@ -8269,8 +8269,8 @@
                     end 
                 end)
             end 
-
-            Esp.Players[ player.Name ] = Data
+				
+            Esp.Players[ player.DisplayName ] = Data
 
             return Data
         end
@@ -8658,7 +8658,7 @@
         end 
 
         function Esp.RemovePlayer(player)
-            local Path = Esp.Players[player.Name]
+            local Path = Esp.Players[player.DisplayName]
             
             if Path then
                 Path.Destroy()
